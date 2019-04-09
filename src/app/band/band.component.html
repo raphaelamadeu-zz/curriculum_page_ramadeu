@@ -1,0 +1,33 @@
+<div [id]="anchor" class="band bg-light shadow">
+  <div class="container">
+    <div class="row">
+      <div [class.order-2]="alternate" class="col-lg-6 col-md-8">
+        <h3 class="text-center h2">
+          {{ heading }}
+        </h3>
+
+        <div class="content">
+          <pre>{{ content }}</pre>
+          <div *ngIf="list">
+            <ul>
+              <li *ngFor="let item of listContent">
+                {{ item }}
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <div *ngIf="cta_active" class="ctas text-center">
+          <div>
+            <a *ngFor="let cta of ctas" class="btn btn-{{ cta.type }}" [href]="cta.url" role="button">
+              {{ cta.text }}
+            </a>
+          </div>
+        </div>
+      </div>
+      <div [class.order-1]="alternate" class="col-lg-6 col-md-4">
+        <img class="img-fluid shadow" [src]="img" [alt]="alt">
+      </div>
+    </div>
+  </div>
+</div>

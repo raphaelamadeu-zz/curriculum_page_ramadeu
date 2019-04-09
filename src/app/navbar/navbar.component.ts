@@ -1,4 +1,5 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Input } from '@angular/core';
+import { BANDS } from '../bands-mock';
 
 @Component({
   selector: 'app-navbar',
@@ -6,7 +7,9 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./navbar.component.css']
 })
 export class NavbarComponent implements OnInit {
-  headingTitle = "R.Amadeu";
+  @Input() headingTitle: string;
+
+  buttons = BANDS;
   constructor() { }
 
   ngOnInit() {

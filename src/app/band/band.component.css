@@ -1,0 +1,40 @@
+.band {
+  margin-top: 14px;
+  padding: 20px;
+}
+
+h3 {
+  font-family: 'Ubuntu', sans-serif;
+  font-weight: 700;
+}
+
+.content {
+  margin-top: 20px;
+  font-family: 'roboto', sans-serif;
+  font-weight: 500;
+  margin-bottom: 60px;
+}
+
+
+pre {
+  white-space: pre-wrap;       /* css-3 */
+  white-space: -moz-pre-wrap;  /* Mozilla, since 1999 */
+  white-space: -pre-wrap;      /* Opera 4-6 */
+  white-space: -o-pre-wrap;    /* Opera 7 */
+  word-wrap: break-word;       /* Internet Explorer 5.5+ */
+}
+
+div.col-6 {
+  position: relative;
+}
+
+.ctas {
+  position: absolute;
+  bottom: 20px;
+  right: 0;
+  left: 0;
+}
+
+.btn {
+  margin-right: 5px;
+}

@@ -5,10 +5,9 @@
   </button>
   <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
     <div class="navbar-nav">
-      <a class="nav-item nav-link" href="#">Who am I<span class="sr-only">(current)</span></a>
-      <a class="nav-item nav-link" href="#">Skills</a>
-      <a class="nav-item nav-link" href="#">Education</a>
-      <a class="nav-item nav-link" href="#">Experience</a>
+      <a *ngFor="let button of buttons" class="nav-item nav-link" href="#{{ button.anchor }}">
+        {{ button.heading }}
+        <span class="sr-only">(current)</span></a>
     </div>
   </div>
 </nav>

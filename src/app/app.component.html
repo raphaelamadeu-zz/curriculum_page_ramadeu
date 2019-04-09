@@ -1,2 +1,18 @@
-<app-navbar></app-navbar>
-<app-leadspace [name]="name" [(quote)]="quote"><app-leadspace>
+<app-navbar
+[headingTitle]="headingTitle"></app-navbar>
+<app-leadspace [name]="name" [(quote)]="quote"></app-leadspace>
+<div>
+  <app-band *ngFor="let band of bands"
+   [anchor]="band.anchor"
+   [heading]="band.heading"
+   [content]="band.content"
+   [img]="band.img"
+   [alt]="band.alt"
+   [alternate]="band.alternate"
+   [list]="band.list"
+   [listContent]="band.listContent"
+   [cta_active]="band.cta_active"
+   [ctas]="band.ctas"
+   >
+ </app-band>
+</div>

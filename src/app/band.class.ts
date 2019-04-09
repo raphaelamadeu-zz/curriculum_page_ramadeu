@@ -8,5 +8,5 @@ export class Band {
   list: boolean = false;
   listContent: string[] = [];
   cta_active: boolean = false;
-  ctas: {text: string; url: string; type: string;}[];
+  ctas: {text: string; url: string; type: string; external: boolean}[];
 }

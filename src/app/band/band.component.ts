@@ -16,7 +16,7 @@ export class BandComponent implements OnInit {
   @Input() list: boolean;
   @Input() listContent: string[];
   @Input() cta_active: boolean;
-  @Input() ctas: {text: string; url: string; type: string;}[];
+  @Input() ctas: {text: string; url: string; type: string; external: boolean}[];
 
   constructor() { }
 

@@ -12,7 +12,11 @@ h3 {
   margin-top: 20px;
   font-family: 'roboto', sans-serif;
   font-weight: 500;
-  margin-bottom: 60px;
+}
+
+li {
+  font-family: 'roboto', sans-serif;
+  font-size: 90%;
 }
 
 
@@ -25,16 +29,33 @@ pre {
 }
 
 div.col-6 {
-  position: relative;
+  display: flex;
 }
 
 .ctas {
-  position: absolute;
-  bottom: 20px;
-  right: 0;
-  left: 0;
+  display: inline-block;
+  align-self: flex-end;
 }
 
 .btn {
   margin-right: 5px;
+  margin-bottom: 5px;
+}
+
+.show-small {
+  display: none;
+}
+
+@media screen and (max-width: 768px){
+  .hidden-small {
+    display: none;
+  }
+
+  .show-small {
+    display: block;
+  }
+
+  img {
+    margin-bottom: 15px;
+  }
 }
